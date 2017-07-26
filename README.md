@@ -74,7 +74,7 @@ module.exports = {
           // NODE服务项目别名
           NODE_SITE: 'm',
           // 当前Node服务环境
-          NODE_ENV: NODE_ENV,
+          ENV_TYPE: NODE_ENV,
           // 服务端口
           port: 10500,
           // 是否开启L5 taf平台适用
