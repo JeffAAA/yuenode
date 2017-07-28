@@ -17,7 +17,7 @@ module.exports = {
       // 以下是站点配置
       env: {
         // 站点配置
-        yuenodeConf: JSON.stringify({
+        config: JSON.stringify({
           // NODE服务项目别名
           NODE_SITE: 'oversea',
           // 当前Node服务环境

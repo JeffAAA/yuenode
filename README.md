@@ -70,7 +70,7 @@ module.exports = {
       // 以下是站点配置
       env: {
         // 站点配置
-        yuenodeConf: JSON.stringify({
+        config: JSON.stringify({
           // NODE服务项目别名
           NODE_SITE: 'm',
           // 当前Node服务环境
@@ -235,6 +235,8 @@ module.exports = {
 寻找顺序为：模板文件根目录中对应域名文件夹下 error/{状态码}.html 页面 => 模板文件根目录 error/{状态码}.html 页面 => 模板文件根目录中对应域名文件夹下 error.html 页面 => 模板文件根目录 error.html 页面 => 框架机自带 error.html 页面。顺序寻找，找到即渲染。
 
 为兼容已有项目，请注意 error.html 页面与 error 文件夹为平级。以上为强约定，不需要配置。
+
+pro 环境添加 query ?_y_error_show 可以显示错误信息。
 
 ```js
 /**

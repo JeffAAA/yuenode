@@ -23,7 +23,7 @@ const stateInfo = {
 };
 
 module.exports = {
-    yuenodeConf: siteConf,
+    config: siteConf,
     middlewares: [
         // 请求记录中间件
         {
@@ -39,7 +39,9 @@ module.exports = {
                     envType: envType || '',
                     staticConf: serverConf.static || {},
                     defaultSearch: { 'keywords': '' }
-                }
+                },
+                // pro 环境错误显示 query
+                errorMsgPassword: '_y_error_show'
             }
         },
         // favicon
